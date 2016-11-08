@@ -1,28 +1,21 @@
-# IBM Watson + CodeIgniter + Unirest PHP
+# Library to integrate CodeIgniter and Visual Recognition
 
-Esse é um exemplo de integração entre a API do Visual Recognition, um dos serviços do IBM Watson, e o CodeIgniter.
+This is a simple and basic library to integrate Codeigniter and Visual Recognition, and is in 0.0.1 version.
 
-Como o IBM Watson não possui um SDK oficial para PHP, somente a possibilidade de requisição cURL, então utilizamos a biblioteca Unirest PHP para fazer essas requisições à API do Visual Recognition.
+Help us construct a useful library making a fork, wrinting code and send pull requests.
 
-Após fazer o clone/download do projeto, execute o comando a seguir para instalar as dependências através do Composer.
+## Installation and Use
+
+To use this library in your CodeIgniter project, copy libraries folder content to application/library in your project.
+
+Configure the API endpoint, key and version before use this library.
+
+**Note:** You will need create an account in IBM Bluemix for access IBM Watson services and use the APIs.
+
+https://console.ng.bluemix.net/registration
+
+You will need install the Unirest PHP library, which is a library dependency. Use Composer to install.
 
 ```
-composer install
+composer require mashape/unirest-php
 ```
-
-No diretório `application/libraries` tem um arquivo chamado `IBMWatsonVR.php`, que é onde está o código inicial da integração. Ele faz as requisições à API para poder obter as informações da imagem.
-
-Essa library ainda está em fase inicial, contemplando somente requisições via método GET, onde você precisa enviar a URL da imagem para obter as informações dela.
-
-Futuramente ela receberá atualizações para suportar o método POST, permitindo enviar o arquivo da imagem, além de poder também enviar múltiplas imagens.
-
-## Colaborando com a evolução da library
-
-Você pode contribuir com a evolução da library. Para isso, verifique as issues no repositório da library (link abaixo), faça um fork e nos ajude a ampliar os recursos dela.
-
-## Links Úteis
-
-* IBM Watson - http://www.ibm.com/watson/
-* Unirest PHP - https://github.com/Mashape/unirest-php
-* Repositório da library IBMWatsonVR para CodeIgniter - https://github.com/jlamim/codeigniter-ibm-watson-visual-recognition
-* Tutorial sobre a integração do CodeIgniter com a API do Visual Recognition - http://www.universidadecodeigniter.com.br/integracao-inicial-entre-codeigniter-e-visual-recognition/
